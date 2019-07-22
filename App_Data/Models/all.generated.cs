@@ -8,8 +8,8 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "97735c9c314bab9e")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.5")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "40cf616a19a63f2e")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
 // FILE: models.generated.cs
@@ -109,6 +109,10 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
 		IEnumerable<string> Keywords { get; }
 
+		/// <summary>SchemaMarkUp</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		string SchemaMarkUp { get; }
+
 		/// <summary>Description</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
 		string SeoMetaDescription { get; }
@@ -153,6 +157,17 @@ namespace Umbraco.Web.PublishedModels
 		/// <summary>Static getter for Keywords</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
 		public static IEnumerable<string> GetKeywords(INavigationBase that) => that.Value<IEnumerable<string>>("keywords");
+
+		///<summary>
+		/// SchemaMarkUp: Place for scheme markup
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		[ImplementPropertyType("schemaMarkUp")]
+		public string SchemaMarkUp => GetSchemaMarkUp(this);
+
+		/// <summary>Static getter for SchemaMarkUp</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		public static string GetSchemaMarkUp(INavigationBase that) => that.Value<string>("schemaMarkUp");
 
 		///<summary>
 		/// Description: A brief description of the content on your page. This text is shown below the title in a google search result and also used for Social Sharing Cards. The ideal length is between 130 and 155 characters
@@ -236,6 +251,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
 		[ImplementPropertyType("keywords")]
 		public IEnumerable<string> Keywords => NavigationBase.GetKeywords(this);
+
+		///<summary>
+		/// SchemaMarkUp: Place for scheme markup
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		[ImplementPropertyType("schemaMarkUp")]
+		public string SchemaMarkUp => NavigationBase.GetSchemaMarkUp(this);
 
 		///<summary>
 		/// Description: A brief description of the content on your page. This text is shown below the title in a google search result and also used for Social Sharing Cards. The ideal length is between 130 and 155 characters
@@ -416,6 +438,13 @@ namespace Umbraco.Web.PublishedModels
 		public IEnumerable<string> Keywords => NavigationBase.GetKeywords(this);
 
 		///<summary>
+		/// SchemaMarkUp: Place for scheme markup
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		[ImplementPropertyType("schemaMarkUp")]
+		public string SchemaMarkUp => NavigationBase.GetSchemaMarkUp(this);
+
+		///<summary>
 		/// Description: A brief description of the content on your page. This text is shown below the title in a google search result and also used for Social Sharing Cards. The ideal length is between 130 and 155 characters
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
@@ -482,6 +511,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
 		[ImplementPropertyType("keywords")]
 		public IEnumerable<string> Keywords => NavigationBase.GetKeywords(this);
+
+		///<summary>
+		/// SchemaMarkUp: Place for scheme markup
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		[ImplementPropertyType("schemaMarkUp")]
+		public string SchemaMarkUp => NavigationBase.GetSchemaMarkUp(this);
 
 		///<summary>
 		/// Description: A brief description of the content on your page. This text is shown below the title in a google search result and also used for Social Sharing Cards. The ideal length is between 130 and 155 characters
@@ -716,6 +752,13 @@ namespace Umbraco.Web.PublishedModels
 		public IEnumerable<string> Keywords => NavigationBase.GetKeywords(this);
 
 		///<summary>
+		/// SchemaMarkUp: Place for scheme markup
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		[ImplementPropertyType("schemaMarkUp")]
+		public string SchemaMarkUp => NavigationBase.GetSchemaMarkUp(this);
+
+		///<summary>
 		/// Description: A brief description of the content on your page. This text is shown below the title in a google search result and also used for Social Sharing Cards. The ideal length is between 130 and 155 characters
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
@@ -805,6 +848,13 @@ namespace Umbraco.Web.PublishedModels
 		public IEnumerable<string> Keywords => NavigationBase.GetKeywords(this);
 
 		///<summary>
+		/// SchemaMarkUp: Place for scheme markup
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		[ImplementPropertyType("schemaMarkUp")]
+		public string SchemaMarkUp => NavigationBase.GetSchemaMarkUp(this);
+
+		///<summary>
 		/// Description: A brief description of the content on your page. This text is shown below the title in a google search result and also used for Social Sharing Cards. The ideal length is between 130 and 155 characters
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
@@ -887,6 +937,13 @@ namespace Umbraco.Web.PublishedModels
 		public IEnumerable<string> Keywords => NavigationBase.GetKeywords(this);
 
 		///<summary>
+		/// SchemaMarkUp: Place for scheme markup
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		[ImplementPropertyType("schemaMarkUp")]
+		public string SchemaMarkUp => NavigationBase.GetSchemaMarkUp(this);
+
+		///<summary>
 		/// Description: A brief description of the content on your page. This text is shown below the title in a google search result and also used for Social Sharing Cards. The ideal length is between 130 and 155 characters
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
@@ -960,6 +1017,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
 		[ImplementPropertyType("keywords")]
 		public IEnumerable<string> Keywords => NavigationBase.GetKeywords(this);
+
+		///<summary>
+		/// SchemaMarkUp: Place for scheme markup
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		[ImplementPropertyType("schemaMarkUp")]
+		public string SchemaMarkUp => NavigationBase.GetSchemaMarkUp(this);
 
 		///<summary>
 		/// Description: A brief description of the content on your page. This text is shown below the title in a google search result and also used for Social Sharing Cards. The ideal length is between 130 and 155 characters
