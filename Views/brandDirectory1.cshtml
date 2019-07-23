@@ -1,0 +1,32 @@
+﻿@using Umbraco.Web;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+<ContentModels.BrandDirectory>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+Layout = "master.cshtml";
+}
+@Html.Partial("~/Views/Partials/SectionHeader.cshtml")
+<section class="section">
+   <div class="container">
+   <div class="brand-grid">
+      @if (Model.Children != null)
+      {
+      foreach (Brand brand in Model.Children)
+      {
+      <a href="@brand.Url">
+         <div class="brand-card">
+            <div class="brand-card__inner" style="background-image: url(@brand.BrandImages.Url)">
+               <div class="brand-card__inner-content">
+                  <h2 class="brand-label">@brand.Name</h2>
+               </div>
+               <div class="brand-card__overlay">
+                  <p>@brand.BrandPreamble</p>
+               </div>
+            </div>
+        </div>
+      </a>
+      }
+      }
+      </div>
+   </div>
+</section>

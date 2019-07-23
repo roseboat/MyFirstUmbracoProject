@@ -2094,7 +2094,16 @@ article {
 }
 
 .no-air {
-    margin: 0
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.section__preamble{
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: .8
+ font-family: Montserrat,sans-serif;
 }
 
 .no-scroll {
@@ -2105,13 +2114,71 @@ article {
     text-decoration: none;
     padding: 0px 15px;
     color: #fff !important;
-
 }
 
 .fa:hover{
     transition: all 0.3s ease-in-out;
     opacity: 0.7;
 }
+.brand-grid{
+    width: 100%;
+    padding: 30px 0px;
+}
+
+.brand-grid a{
+ font-family: Montserrat,sans-serif;
+ color: black; 
+}
+
+.brand-card {
+  width: 30%;
+  padding: 5px;
+  float:left;
+  height: 400px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.brand-card:hover * .brand-card__overlay{
+  top: 0;
+}
+
+.brand-card:hover * .brand-card__inner-content {
+  visibility: hidden;
+}
+
+.brand-card__inner{
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.brand-label h2{
+font-family: Arial, sans-serif
+}
+
+
+.brand-card__inner-content{
+  position: absolute;
+  margin-left: 20px;
+  bottom: 0;
+}
+
+.brand-card__overlay{
+  position: relative;
+  background-image: none;
+  background-color: white;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  top:100%;
+  height: 100%;
+  color: rgba(0,0,0,.7);
+  transition: all .7s ease-out;
+}
+
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     input[type=date].form-control, input[type=datetime-local].form-control, input[type=month].form-control, input[type=time].form-control {
         line-height: 34px
