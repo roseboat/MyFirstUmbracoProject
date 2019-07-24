@@ -4,20 +4,28 @@
 @using ContentModels = Umbraco.Web.PublishedModels;
 @{
 Layout = "master.cshtml";
+var children = Model.Children.OrderBy(x => x.Name).ToList();
 }
 @Html.Partial("~/Views/Partials/SectionHeader.cshtml")
 <section class="section">
    <div class="container">
+       <div class="brand-directory"></div>
+       <div class="brand-directory__search-bar">
+           <input type="text" id="brandSearch" onkeyup="myFunction()" placeholder="Search for a brand...">
+       </div>
+       
+       
    <div class="brand-grid">
       @if (Model.Children != null)
       {
-      foreach (Brand brand in Model.Children)
+      
+      foreach (Brand brand in children)
       {
       <a href="@brand.Url">
          <div class="brand-card">
             <div class="brand-card__inner" style="background-image: url(@brand.BrandImages.Url)">
                <div class="brand-card__inner-content">
-                  <h2 class="brand-label">@brand.Name</h2>
+                  <h2 class="brand-label" style="font-family: Montserrat, sans-serif">@brand.Name</h2>
                </div>
                <div class="brand-card__overlay">
                   <p>@brand.BrandPreamble</p>
@@ -26,7 +34,7 @@ Layout = "master.cshtml";
         </div>
       </a>
       }
-      }
+      }</div>
       </div>
    </div>
 </section>

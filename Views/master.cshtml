@@ -88,6 +88,28 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/mvc/5.2.3/jquery.validate.unobtrusive.min.js"></script>
     <script src="@Url.Content("~/scripts/umbraco-starterkit-app.js")"></script>
+    <script>
+    function myFunction() {
+  // Declare variables
+  var input, filter, brands, brandCards, a, i, txtValue;
+  input = document.getElementById('brandSearch');
+  filter = input.value.toUpperCase();
+  
+  brands = document.getElementsByClassName('brand-label');
+  brandCards = document.getElementsByClassName('brand-card');
+
+  for (i = 0; i < brands.length; i++) {
+      
+    a = brands[i];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+    
+      brandCards[i].style.display = "";
+    } else {
+      brandCards[i].style.display = "none";
+    }
+  }
+}</script>
 
 </body>
 
