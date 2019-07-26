@@ -2151,10 +2151,10 @@ article {
 }
 
 .brand-card {
-  width: 30%;
   padding: 5px;
+  width: 100%;
   float:left;
-  height: 400px;
+  height: 300px;
   overflow: hidden;
   text-decoration: none;
   text-align: center;
@@ -2168,14 +2168,6 @@ article {
   visibility: hidden;
 }
 
-.brand-card__inner{
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
 .brand-label h2{
 font-family: Arial, sans-serif
 }
@@ -2185,6 +2177,7 @@ font-family: Arial, sans-serif
   position: absolute;
   margin-left: 20px;
   bottom: 0;
+  
 }
 
 .brand-card__overlay{
@@ -2212,6 +2205,15 @@ font-family: Arial, sans-serif
     .input-group-lg > .input-group-btn > input[type=date].btn, .input-group-lg > .input-group-btn > input[type=datetime-local].btn, .input-group-lg > .input-group-btn > input[type=month].btn, .input-group-lg > .input-group-btn > input[type=time].btn, .input-group-lg > input[type=date].form-control, .input-group-lg > input[type=date].input-group-addon, .input-group-lg > input[type=datetime-local].form-control, .input-group-lg > input[type=datetime-local].input-group-addon, .input-group-lg > input[type=month].form-control, .input-group-lg > input[type=month].input-group-addon, .input-group-lg > input[type=time].form-control, .input-group-lg > input[type=time].input-group-addon, .input-group-lg input[type=date], .input-group-lg input[type=datetime-local], .input-group-lg input[type=month], .input-group-lg input[type=time], input[type=date].input-lg, input[type=datetime-local].input-lg, input[type=month].input-lg, input[type=time].input-lg {
         line-height: 46px
     }
+    
+  .brand-card__inner{
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+    
 }
 
 @media (min-width:768px) {
@@ -2506,6 +2508,20 @@ font-family: Arial, sans-serif
     .employee-grid__item {
         padding: 10px
     }
+    
+    .brand-card {
+  float:left;
+  height: 400px;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+}
+
+.brand-card__inner{
+  padding: 5px;
+  width: 100%;
+}
+    
 }
 
 .compat-msg {    
@@ -2514,6 +2530,7 @@ font-family: Arial, sans-serif
     background: #f4f4f0;
     padding: 30px
 }
+
 
 @media (min-width:992px) {
     .container {
@@ -2764,11 +2781,18 @@ font-family: Arial, sans-serif
     .mobile-nav-handler {
         display: none
     }
+    
+    .brand-card {
+    padding: 5px;
+    width: 50%;
+    height: 400px;
+    }
 }
 
 @media (min-width:1200px) {
     .container {
         width: 1170px
+ 
     }
 
     .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
@@ -2987,6 +3011,12 @@ font-family: Arial, sans-serif
 
     .employee-grid__item {
         padding: 20px
+    }
+    
+    .brand-card {
+    width: 30%;
+    padding: 5px;
+    height: 400px;
     }
 }
 
